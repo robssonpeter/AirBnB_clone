@@ -7,4 +7,4 @@ from models.review import Review
 class TestUser(unittest.TestCase):
 
     def test_uid(self):
-        self.assertEquals(type(Review.id), type("hello"))
+        self.assertEqual(type(Review.id), type("hello"))
