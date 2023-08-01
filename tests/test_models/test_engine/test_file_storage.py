@@ -5,4 +5,5 @@ from models.engine.file_storage import FileStorage
 
 
 class TestFileStorage(unittest.TestCase):
-    pass
+    def test_all(self):
+        self.assertEqual(type(FileStorage().all()), type({}))
