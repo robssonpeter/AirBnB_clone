@@ -3,8 +3,9 @@
 import unittest
 from models.user import User
 
+
 class TestUser(unittest.TestCase):
-    
+
     def test_uid(self):
         self.assertEquals(type(User.id), type("hello"))
 
@@ -19,4 +20,3 @@ class TestUser(unittest.TestCase):
 
     def test_last_name(self):
         self.assertEquals(type(User.last_name), type("hello"))
-
